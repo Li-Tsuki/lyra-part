@@ -9,3 +9,6 @@
 .focus{isolation:isolate}
 .focus::before{z-index:0}
 .focus > *{position:relative;z-index:1}
+
+/* Remove the decorative arc; retain only the functional progress ring. */
+.focus::before{content:none;display:none}
